@@ -1,0 +1,3 @@
+release: "gpt2-small-resid-post-v5-32k"
+id: "blocks.6.hook_resid_post"
+target_feature_id: 16400

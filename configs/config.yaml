@@ -1,0 +1,31 @@
+defaults:
+  - _self_
+  - model: gpt2_small
+  - sae: gpt2_resid_post
+  - optimizer: adamw
+  - scheduler: cosine
+  - data: c4
+  - evaluate: default
+  - experiment: denoiser_train
+
+seed: 42
+output_dir: "outputs"
+
+
+train:
+  max_steps: 2000
+  alpha_range: [0.0, 1.0, 2.0, 5.0, 7.0, 10.0, 12.0, 15.0, 18.0, 20.0, 23.0,  25.0, 30.0, 35.0, 40.0]
+  
+  loss_weights:
+    clean: 1.0
+    feature: 0.05
+    identity: 0.5
+
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}
+  job:
+    chdir: true

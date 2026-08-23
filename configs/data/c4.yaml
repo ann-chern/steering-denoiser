@@ -1,0 +1,7 @@
+dataset_name: "allenai/c4"
+config_name: "en"
+split: "train"
+streaming: true
+batch_size: 4
+seq_len: 64
+min_text_length: 50
