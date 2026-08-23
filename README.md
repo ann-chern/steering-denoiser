@@ -61,6 +61,6 @@ COAST показывает отличные результаты без обуч
 
 ## Ссылки
 
-1. **COAST:** Minimizing Collateral Damage in Activation Steering — https://arxiv.org/abs/2605.01167
+1. **COAST:** Minimizing Collateral Damage in Activation Steering https://arxiv.org/abs/2605.01167
 2. **TransformerLens:** https://github.com/TransformerLensOrg/TransformerLens
 3. **SAELens:** https://github.com/decoderesearch/SAELens

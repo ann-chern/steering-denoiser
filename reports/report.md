@@ -25,7 +25,7 @@ Activation steering: $\tilde{h} = h + \alpha v$
 
 ### 2.2 Выбор признака
 
-Выбран признак 16400, который показывает высокую активацию на "traditional" (взято с сайта SAE viewer [https://openaipublic.blob.core.windows.net/sparse-autoencoder/sae-viewer/index.html#/model/gpt2-small/family/v5_32k/layer/6/location/resid_post_mlp/feature/16400]).Также этот признак показал хорошие метрики на скрининге:
+Выбран признак 16400, который показывает высокую активацию на "traditional" (взято с сайта [\[SAE viewer\]] (https://openaipublic.blob.core.windows.net/sparse-autoencoder/sae-viewer/index.html#/model/gpt2-small/family/v5_32k/layer/6/location/resid_post_mlp/feature/16400)).Также этот признак показал хорошие метрики на скрининге:
 
 | Метрика | Значение |
 |---------|----------|
@@ -74,7 +74,7 @@ $$\text{Concept} = \log p(\text{" traditional"}) - \log p(\text{" modern"})$$
 
 **Repetition Rate:** Доля повторяющихся триграмм в continuation:
 
-$$\text{Rep} = 1 - \frac{\text{# unique 3-grams}}{\text{total 3-grams}}$$
+$$\text{Rep} = 1 - \frac{\text{unique 3-grams}}{\text{total 3-grams}}$$
 
 Чем ниже, тем лучше (0.0 = нет повторов, 1.0 = полный коллапс).
 
@@ -264,10 +264,10 @@ def adaptive_norm_preserving_steering_hook(resid_post, hook, alpha, steering_vec
 
 ## 8. Ссылки
 
-1. **COAST:** Minimizing Collateral Damage in Activation Steering — https://arxiv.org/abs/2605.01167
+1. **COAST:** Minimizing Collateral Damage in Activation Steering https://arxiv.org/abs/2605.01167
 2. **OPIUM:** https://arxiv.org/pdf/2607.19806
-3. **SKOP:** Don't Lose Focus: Activation Steering via Key-Orthogonal Projections — https://arxiv.org/pdf/2605.06342
-4. **FLAS:** Beyond Steering Vector: Flow-based Activation Steering — https://arxiv.org/pdf/2605.05892
+3. **SKOP:** Don't Lose Focus: Activation Steering via Key-Orthogonal Projections https://arxiv.org/pdf/2605.06342
+4. **FLAS:** Beyond Steering Vector: Flow-based Activation Steering https://arxiv.org/pdf/2605.05892
 5. **Persona Vectors:** https://github.com/safety-research/persona_vectors
 6. **TransformerLens:** https://github.com/TransformerLensOrg/TransformerLens
 7. **SAELens:** https://github.com/decoderesearch/SAELens
