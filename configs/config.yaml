@@ -18,7 +18,6 @@ train:
   
   loss_weights:
     clean: 1.0
-    feature: 0.05
     identity: 0.5
 
 hydra:
